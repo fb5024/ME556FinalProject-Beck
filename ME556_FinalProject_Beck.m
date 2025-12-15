@@ -1,6 +1,6 @@
 clear; clc; close all;
 
-dt   = .5;                 % time step [s]
+dt   = 1;                 % time step [s]
 T    = 500;               % total simulation time [s]
 K    = round(T/dt);       % number of time steps
 N    = 40;                % MHE horizon length
@@ -133,3 +133,4 @@ title('Trajectory comparison');
 function th = wrapToPi(th)
     th = mod(th + pi, 2*pi) - pi; % angle wrap
 end
+
